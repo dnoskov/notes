@@ -1,0 +1,225 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Теорема об индексах &mdash; Educatory notes 0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Educatory notes 0.0 documentation" href="index.html" />
+    <link rel="prev" title="Учебные заметки" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Учебные заметки"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Educatory notes 0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>Теорема об индексах<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="theorem admonition">
+<p class="first admonition-title">Теорема</p>
+<p class="last">Если элементы некоторого множества <span class="math">\(A\)</span> зависят от конечного
+числа индексов, каждый из которых пробегает счётное множество
+значений, то это множество <span class="math">\(A\)</span> счётное.</p>
+</div>
+<div class="proof admonition">
+<p class="first admonition-title">Доказательство</p>
+<p>Так как нам ничего не известно об элементах множества <span class="math">\(A\)</span>
+кроме как то, что они зависят от индексов, то у нас нет ни одного
+способа различать эти элементы, кроме как по наборам индексов,
+которые им соответствуют. Установим взаимно однозначное
+соответствие <span class="math">\(f\)</span> между элементами множества <span class="math">\(A\)</span> и
+наборами их индексов:</p>
+<p>Для одного индекса получаем:</p>
+<p><span class="math">\(A=\{a_{x_{(1,j)}}\}\)</span>, <span class="math">\(x_{(1,j)} \in X_1=\{x_{(1,1)},
+x_{(1,2)}, …, x_{(1,j)}, …\} \backsim \mathbb{N}\)</span></p>
+<p>При соответствии <span class="math">\(f\)</span> элементу <span class="math">\(a_{x_{(1,j)}} \in A\)</span>
+соответствует его индекс <span class="math">\(x_{(1,j)} \in X_1\)</span></p>
+<p>Для двух индексов:</p>
+<p><span class="math">\(A=\{a_{x_{(1,j)}, x_{(2,k)}}\}\)</span>,</p>
+<p><span class="math">\(x_{(1,j)} \in X_1=\{x_{(1,1)}, x_{(1,2)}, …, x_{(1,j)}, …\}
+\backsim \mathbb{N}\)</span>,</p>
+<p><span class="math">\(x_{(2,k)} \in X_2=\{x_{(2,1)}, x_{(2,2)}, …, x_{(2,k)}, …\}
+\backsim \mathbb{N}\)</span>,</p>
+<p>При соответствии <span class="math">\(f\)</span> элементу <span class="math">\(a_{x_{(1,j)}, x_{(2,k)}}
+\in A\)</span> соответствует пара (упорядоченный набор) его индексов</p>
+<div class="math">
+\[\langle x_{(1,j)}, x_{(2,k)} \rangle \in X_1 \times X_2 =\]\[\begin{split}= \{
+\langle x_{(1,1)}, x_{(2,1)} \rangle,
+\langle x_{(1,1)}, x_{(2,2)} \rangle,
+\langle x_{(1,1)}, x_{(2,3)} \rangle,
+\langle x_{(1,1)}, x_{(2,4)} \rangle, …, \langle x_{(1,1)}, x_{(2,k)} \rangle, …, \\\end{split}\]\[\begin{split}\langle x_{(1,2)}, x_{(2,1)} \rangle,
+\langle x_{(1,2)}, x_{(2,2)} \rangle,
+\langle x_{(1,2)}, x_{(2,3)} \rangle,
+\langle x_{(1,2)}, x_{(2,4)} \rangle, …, \langle x_{(1,2)}, x_{(2,k)} \rangle, …, \\\end{split}\]\[\begin{split}\langle x_{(1,3)}, x_{(2,1)} \rangle,
+\langle x_{(1,3)}, x_{(2,2)} \rangle,
+\langle x_{(1,3)}, x_{(2,3)} \rangle,
+\langle x_{(1,3)}, x_{(2,4)} \rangle, …, \langle x_{(1,3)}, x_{(2,k)} \rangle, …, \\\end{split}\]\[\begin{split}…, \\\end{split}\]\[\langle x_{(1,j)}, x_{(2,1)} \rangle,
+\langle x_{(1,j)}, x_{(2,2)} \rangle,
+\langle x_{(1,j)}, x_{(2,3)} \rangle,
+\langle x_{(1,j)}, x_{(2,4)} \rangle, …, \langle x_{(1,j)}, x_{(2,k)} \rangle, … \},\]</div>
+<p>где <span class="math">\(i,k \in \mathbb{N}\)</span></p>
+<p>Для большего числа индексов соответствие сторится аналогично.</p>
+<p>Теперь, построив это соответствие, будем рассматривать только
+декартовы произведения множеств индексов (<span class="math">\(X_1, X_2, …,
+X_n\)</span>), т.е. будем рассматривать множества упорядоченных наборов
+индексов. Т.к. у нас есть взаимно-однозначное соответствие
+<span class="math">\(f\)</span>, то мы можем в силу этого соответствия перейти к
+элементам множества <span class="math">\(A\)</span> от любого набора индексов в любой
+момент.</p>
+<p>Итак, множества индексов счётны по условию теоремы. Докажем, что
+счётным является также и множество <em>пар</em> индексов. Для этого
+выпишем элементы произведения <span class="math">\(X_1 \times X_2\)</span>
+последовательно следующим образом:</p>
+<div class="math">
+\[\begin{split}\langle x_{(1,1)}, x_{(2,1)} \rangle, \\
+\langle x_{(1,1)}, x_{(2,2)} \rangle,
+\langle x_{(1,2)}, x_{(2,1)} \rangle, \\
+\langle x_{(1,1)}, x_{(2,3)} \rangle,
+\langle x_{(1,2)}, x_{(2,2)} \rangle,
+\langle x_{(1,3)}, x_{(2,1)} \rangle, \\
+\langle x_{(1,1)}, x_{(2,4)} \rangle,
+\langle x_{(1,2)}, x_{(2,3)} \rangle,
+\langle x_{(1,3)}, x_{(2,2)} \rangle,
+\langle x_{(1,4)}, x_{(2,1)} \rangle,
+…, \\
+\langle x_{(1,i)}, x_{(2,k)} \rangle, …\end{split}\]</div>
+<p>Здесь в каждой строке выписаны элементы, стоящие на одной &#8220;побочной
+диагонали&#8221;, суммы их вторых индексов постоянны в каждой строке. Не
+составляет труда перенумеровать элементы в такой
+записи. Действительно, поставим в соответствие всем выписанным
+таким образом парам индексов последовательные натуральные
+числа. Тем самым установим взаимно однозначное соответствие между
+множеством <span class="math">\(X_1 \times X_2\)</span> и множеством натуральных чисел
+<span class="math">\(\mathbb{N}\)</span> и докажем, что <span class="math">\(X_1 \times X_2 \backsim
+\mathbb{N}\)</span>. Значит <span class="math">\(X_1 \times X_2\)</span> действительно счётно.</p>
+<p>Теперь воспользуемся методом математической индукции по <span class="math">\(n\)</span> —
+количеству индексов и докажем, что <span class="math">\(X_1 \times X_2 \times …
+\times X_n \backsim \mathbb{N}, \, \forall n \in \mathbb{N}\)</span></p>
+<ol class="arabic">
+<li><p class="first">Базис для <span class="math">\(n=1\)</span> и <span class="math">\(n=2\)</span> доказан выше.</p>
+</li>
+<li><p class="first">Предположим, что <span class="math">\(X_1 \times X_2 \times … \times X_k
+\backsim \mathbb{N}\)</span></p>
+<p>Обозначим <span class="math">\(Y=\{y_1, y_2, …, y_m, …\}=X_1 \times X_2 \times
+… \times X_k\)</span></p>
+<p>Построим множество</p>
+<div class="math">
+\[\begin{split}Y \times X_{k+1} = \{
+\langle y_1, x_{(k+1,1)} \rangle,
+\langle y_1, x_{(k+1,2)} \rangle,
+\langle y_1, x_{(k+1,3)} \rangle,
+\langle y_1, x_{(k+1,4)} \rangle, …, \langle y_1, x_{(k+1,j)} \rangle, … \\\end{split}\]\[\begin{split}\langle y_2, x_{(k+1,1)} \rangle,
+\langle y_2, x_{(k+1,2)} \rangle,
+\langle y_2, x_{(k+1,3)} \rangle,
+\langle y_2, x_{(k+1,4)} \rangle, …, \langle y_2, x_{(k+1,j)} \rangle, … \\\end{split}\]\[\begin{split}…, \\\end{split}\]\[\begin{split}\langle y_3, x_{(k+1,1)} \rangle,
+\langle y_3, x_{(k+1,2)} \rangle,
+\langle y_3, x_{(k+1,3)} \rangle,
+\langle y_3, x_{(k+1,4)} \rangle, …, \langle y_3, x_{(k+1,j)} \rangle, … \\\end{split}\]\[\langle y_i, x_{(k+1,1)} \rangle,
+\langle y_i, x_{(k+1,1)} \rangle,
+\langle y_i, x_{(k+1,1)} \rangle,
+\langle y_i, x_{(k+1,1)} \rangle, …, \langle y_i, x_{(k+1,j)} \rangle, … \}\]</div>
+</li>
+</ol>
+<p>Выше было доказано, что множество всех пар, составленных из
+элементов счётных множеств, счётно. Следовательно, множество
+<span class="math">\(Y \times X_{k+1}\)</span> тоже счётно. Значит индуктивное
+предположение выполняется для <span class="math">\(n=k+1\)</span>. Это доказывает
+утверждение:</p>
+<p><span class="math">\(X_1 \times X_2 \times … \times X_n \backsim \mathbb{N}, \,
+\forall n \in \mathbb{N}\)</span></p>
+<p class="last">Итак, декартово произведение конечного числа счётных множеств
+счётно. Но декартово произведение конечного числа счётных множеств
+— это множество всех конечных наборов индексов. В силу построенного
+выше биективного соответствия <span class="math">\(f\)</span>, каждому такому набору
+однозначно соответствует элемент множества <span class="math">\(A\)</span>. Отсюда, в
+силу транзитивности отношения эквивалентности, получаем: <span class="math">\(A
+\backsim X_1 \times X_2 \times … \times X_n \backsim \mathbb{N}
+\Rightarrow A \backsim \mathbb{N}\)</span>. Следовательно, множество
+<span class="math">\(A\)</span> счётно, что и требовалось доказать.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Учебные заметки</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index_theorem2.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Учебные заметки"
+             >previous</a> |</li>
+        <li><a href="index.html">Educatory notes 0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, dnoskov.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

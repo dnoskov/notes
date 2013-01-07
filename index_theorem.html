@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Теорема об индексах &mdash; Educatory notes 0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Educatory notes 0.0 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="index.html">Educatory notes 0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>Теорема об индексах<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="theorem admonition">
+<p class="first admonition-title">Теорема</p>
+<p class="last">Если элементы некоторого множества <span class="math">\(A\)</span> зависят от конечного
+количества индексов, каждый из которых пробегает счётное множество
+значений, то это множество <span class="math">\(A\)</span> счётное.</p>
+</div>
+<p>Т. е.:</p>
+<div class="math">
+\[A=\{a| a=a(x_1, x_2, …, x_n), n \in \mathbb{N}\} \backsim \mathbb{N},\]</div>
+<p>где:</p>
+<div class="math">
+\[x_1 \in X_1 \backsim \mathbb{N},\]\[x_2 \in X_2 \backsim \mathbb{N},\]\[\ldots,\]\[x_n \in X_n \backsim \mathbb{N}\]</div>
+<p>Здесь говорится о том, что каждый элемент множества <span class="math">\(A\)</span>
+<em>однозначно</em> определяется набором своих индексов. Действительно, если
+бы какому-нибудь элементу множества <span class="math">\(A\)</span> соответствовало более
+одного набора индексов, то <span class="math">\(A\)</span> было бы мультимножеством,
+т.е. содержало бы этот элемент для каждого из соответствующих ему
+наборов индексов. Если бы это было так, то ничто не помешало бы нам
+построить множество, состоящее из одинаковых элементов, зависящих от
+индексов, например: <span class="math">\(A=\{a|a=1^{g(x_1,x_2,…,x_n, …)}\}\)</span>, где
+<span class="math">\(g(x_1,…,x_n, …)\)</span> — какая-то функция. Так определённое множество
+<span class="math">\(A\)</span> уже, очевидно, является конечным, т.к. состоит из
+единственного элемента <span class="math">\(a=1\)</span>.</p>
+<p>Значит в теореме говорится не о всякой зависимости, а о такой, которая
+разным наборам индексов ставит в соответствие разные элементы
+множества <span class="math">\(A\)</span>.</p>
+<p>Это, чисто формальное рассуждение, без которого можно было бы и
+обойтись <a class="footnote-reference" href="#id3" id="id2">[1]</a>, приводит нас к набору условий (<span class="math">\(k \leqslant n\)</span>):</p>
+<ol class="arabic simple">
+<li><span class="math">\(\forall a \in A \quad \exists ! \langle x_1,…,x_k \rangle
+\in X_1 \times … \times X_k\)</span>,— т.е. для любого элемента множества
+<span class="math">\(A\)</span> существует единственный набор индексов (который является
+ни чем иным, как элементом декартова произведения множеств, по
+которым &#8220;пробегают&#8221; индексы). Это означает, что соответствие, в
+силу которого каждому элементу множества <span class="math">\(A\)</span> соответствует
+набор индексов, является отображением: <span class="math">\(f(a): A \rightarrow
+X_1 \times … \times X_k\)</span></li>
+<li><span class="math">\(\forall \langle x_1, …, x_k \rangle \in X_1 \times … \times
+X_k \quad \exists a \in A\)</span>,— любому набору индексов соответствует
+какой-то элемент множества <span class="math">\(A\)</span>. Это значит, что <span class="math">\(f\)</span> —
+сюръекция.</li>
+<li><span class="math">\(\langle x_{1_1}, …, x_{k_1} \rangle \ne \langle x_{1_2}, …,
+x_{k_2} \rangle \Leftrightarrow a(x_{1_1}, …, x_{k_1}) \ne
+a(x_{1_2}, …, x_{k_2})\)</span>,— и элементам множества <span class="math">\(A\)</span>
+соответствуют разные наборы индексов. Поэтому <span class="math">\(f\)</span> — инъекция.</li>
+</ol>
+<p>Эти три условия означают, что <span class="math">\(f\)</span> — биекция, и поэтому <span class="math">\(A
+\backsim X_1 \times … \times X_n\)</span></p>
+<p>Теперь можно перейти к доказательству.</p>
+<div class="proof admonition">
+<p class="first admonition-title">Доказательство</p>
+<p>Проведём методом математической индукции по <span class="math">\(n\)</span> — количеству
+индексов.</p>
+<p>Дано: <span class="math">\(A_n=\{ a_{x_1, x_2, …, x_n}\}\)</span>, <span class="math">\(x_i \in X_i
+\backsim \mathbb{N}, \{x_i\}_{i=\overline{1,n}}\)</span></p>
+<p>Доказать: <span class="math">\(P(n): A_n \backsim \mathbb{N}\)</span></p>
+<ol class="last arabic">
+<li><p class="first">База индукции:</p>
+<p><span class="math">\(P(1): A_1=\{a_{x_{1_1}}, a_{x_{1_2}}, …, a_{x_{1_k}}, …\},
+\, x_1 \in X_1=\{x_{1_1}, x_{1_2}, …, x_{1_k}, …\} \backsim
+\mathbb{N}\)</span></p>
+<p>Элементу <span class="math">\(a_{x_{1_1}} \in A_1\)</span> соответствует набор из одного
+индекса <span class="math">\(x_{1_1} \in X_1\)</span></p>
+<p>Элементу <span class="math">\(a_{x_{1_2}} \in A_1\)</span> соответствует набор из одного
+индекса <span class="math">\(x_{1_2} \in X_1\)</span></p>
+<p>…</p>
+<p>Элементу <span class="math">\(a_{x_{1_i}} \in A_1\)</span> соответствует набор из одного
+индекса <span class="math">\(x_{1_i} \in X_1\)</span></p>
+<p>т.е. <span class="math">\(\forall a \in A_1 \,\, \exists! x_1 \in X_1\)</span>,</p>
+<p><span class="math">\(\forall x_1 \in X_1 \,\, \exists a \in A_1\)</span>,</p>
+<p>и для нас все они различны, поэтому:</p>
+<p><span class="math">\(a_{x_{1_i}} \ne a_{x_{1_j}} \Leftrightarrow x_{1_i} \ne
+x_{1_j}\)</span></p>
+<p>Каждому индексу соответствует единственный элемент множества
+<span class="math">\(A_1\)</span>, и наоборот — каждый элемент множества <span class="math">\(A_1\)</span>
+определяется единственным индексом <span class="math">\(x_{1_i} \in
+X_1\)</span>. Значит <span class="math">\(A_1 \backsim X_1\)</span>. А т.к. <span class="math">\(X_1
+\backsim \mathbb{N}\)</span>, то по свойству транзитивности отношения
+эквивалентности <span class="math">\(A_1 \backsim \mathbb{N}\)</span></p>
+<p>Т.о. <span class="math">\(P(1): A_1 \backsim \mathbb{N}\)</span>, база индукции
+установлена</p>
+</li>
+<li><p class="first">Предположим, что выполняется <span class="math">\(P(k)\)</span>, т.е. <span class="math">\(A_k
+\backsim \mathbb{N}\)</span></p>
+<p>Или, подробно: <span class="math">\(A_k=\{a_{x_{1_1}, x_{2_1}, x_{3_1}, …,
+x_{k_1}}, a_{x_{1_2},x_{2_2}, …, x_{k_2}}, …, a_{x_{1_m}, …,
+x_{k_m}}, …\} \backsim \mathbb{N}\)</span>, где:</p>
+<p><span class="math">\(x_{i_j} \in X_i=\{x_{i_1}, x_{i_2}, …, x_{i_j}, …\}
+\backsim \mathbb{N}\)</span>, <span class="math">\(i=\overline{1,k}\)</span></p>
+</li>
+</ol>
+</div>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td><p class="first">Действительно, ведь в теореме говорится только о том, что
+каждый элемент <span class="math">\(A\)</span> зависит от <span class="math">\(\langle x_1, …, x_n
+\rangle\)</span>, и ничего не говорится ни о характере этой зависимости, ни
+о том, каковы сами эти элементы множества <span class="math">\(A\)</span>. В частности не
+говорится о том одинаковы они или различны. Для нас, однако,
+существенно то, что <em>для нас они различны</em> хотя бы потому, что они
+зависят от разных наборов индексов. Т.е. мы отвлекаемся
+(абстрагируемся) от всего, что не касается различности этих
+элементов, связанной с их зависимостью от разных индексов. Нас
+интересует только эта различность. И этого достаточно, чтобы
+сказать: &#8220;Элемент <span class="math">\(a \in A\)</span> однозначно определяется своим
+набором индексов&#8221;. Т.е. мы можем записать определение множества
+<span class="math">\(A\)</span> иначе:</p>
+<div class="math">
+\[A=\left\{a_{x_1, x_2, …, x_n}\right\}\]</div>
+<p class="last">где <span class="math">\(x_i \in X_i \backsim \mathbb{N}, \{x_i\}_{i=\overline{1,n}}\)</span></p>
+</td></tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index_theorem.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="index.html">Educatory notes 0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, dnoskov.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
